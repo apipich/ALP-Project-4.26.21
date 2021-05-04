@@ -129,5 +129,6 @@ input {
   position: relative;
   width: 100%;
   top: 550px;
+  text-transform: capitalize;
   text-align: center;
 }
