@@ -27,6 +27,7 @@ function formatDate(date) {
 formatDate();
 
 // changing city, then change temperature
+// add humidity of weather, add windspeed
 
 function showWeather(response) {
   let cityElement = document.querySelector("h1");
