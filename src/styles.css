@@ -27,12 +27,12 @@ p {
   color: #0d335d;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  text-transform: capitalize;
 }
 
 .condition {
   color: #0d335d;
   text-align: center;
+  text-transform: capitalize;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
