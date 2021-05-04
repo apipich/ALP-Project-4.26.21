@@ -34,7 +34,7 @@ function showWeather(response) {
   let temperature = Math.round(response.data.main.temp);
   let city = response.data.name;
   let weatherConditionElement = document.querySelector("#weatherCondition");
-  let weatherCondition = response.data.weather.description;
+  let weatherCondition = response.data.weather[0].description;
 
   cityElement.innerHTML = city;
   temperatureElement.innerHTML = temperature;
