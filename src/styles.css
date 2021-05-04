@@ -27,6 +27,7 @@ p {
   color: #0d335d;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .condition {
@@ -129,6 +130,5 @@ input {
   position: relative;
   width: 100%;
   top: 550px;
-  text-transform: capitalize;
   text-align: center;
 }
