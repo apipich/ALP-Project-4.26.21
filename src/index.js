@@ -33,9 +33,12 @@ function showWeather(response) {
   let temperatureElement = document.querySelector("h2");
   let temperature = Math.round(response.data.main.temp);
   let city = response.data.name;
+  let weatherConditionElement = document.querySelector("#weatherCondition");
+  let weatherCondition = response.data.weather.description;
 
   cityElement.innerHTML = city;
   temperatureElement.innerHTML = temperature;
+  weatherConditionElement.innerHTML = weatherCondition;
 }
 
 function findCity(city) {

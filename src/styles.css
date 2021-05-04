@@ -29,6 +29,13 @@ p {
   font-size: 20px;
 }
 
+.condition {
+  color: #0d335d;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
 h2 {
   color: #1a508b;
   text-align: right;
