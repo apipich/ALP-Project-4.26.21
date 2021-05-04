@@ -23,6 +23,10 @@ p {
   font-size: 20px;
 }
 
+body {
+  text-align: center;
+}
+
 #currentWeather {
   color: #0d335d;
   font-family: "Raleway", sans-serif;
