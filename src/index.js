@@ -36,10 +36,15 @@ function showWeather(response) {
   let city = response.data.name;
   let weatherConditionElement = document.querySelector("#weatherCondition");
   let weatherCondition = response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = city;
   temperatureElement.innerHTML = temperature;
   weatherConditionElement.innerHTML = weatherCondition;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function findCity(city) {

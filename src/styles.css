@@ -1,5 +1,5 @@
 .container {
-  padding: 50px;
+  padding: 40px;
   margin: 0 auto;
   margin-top: 40px;
   border: 1px solid #93a5cf;
@@ -16,15 +16,10 @@ h1 {
   letter-spacing: -2px;
 }
 
-p {
-  color: #0d335d;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-}
-
+p,
 #currentWeather {
   color: #0d335d;
+  text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
@@ -101,22 +96,15 @@ button:hover {
   padding: 3px;
 }
 
-.col-md {
-  text-align: center;
-  line-height: 30px;
-  font-family: "Raleway", sans-serif;
-  font-size: 40px;
-  color: white;
-  padding: 7px;
-}
-
-.col-sm-6 {
-  margin: 0 auto;
-  padding: -2px;
-}
-
 .row {
   margin: 0 auto;
+}
+
+.col-sm-4 {
+  width: 10%;
+  padding: 0 8px;
+  text-align: center;
+  align-self: center;
 }
 
 input {
@@ -131,4 +119,13 @@ input {
   width: 100%;
   top: 550px;
   text-align: center;
+}
+
+.col-md {
+  text-align: center;
+  line-height: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: white;
+  padding: 7px;
 }
