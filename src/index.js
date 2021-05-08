@@ -38,6 +38,7 @@ function showWeather(response) {
   let weatherCondition = response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
 
+  fahrenheitTemp = response.data.main.temp;
   cityElement.innerHTML = city;
   temperatureElement.innerHTML = temperature;
   weatherConditionElement.innerHTML = weatherCondition;
@@ -87,24 +88,27 @@ weatherForm.addEventListener("submit", handleSubmit);
 
 findCity("Hoboken");
 
-// part 3 - ***celsius and fahrenheit conversions needs work***
+// part 3 - convert to celsius
 
 function getCelsius(event) {
   event.preventDefault();
   let celsius = document.querySelector("h2");
-  let celsiusElement = "h2" - (32 * 5) / 9;
-  celsius.innerHTML = `${celsiusElement}`;
+  let celsiusElement = ((fahrenheitTemp - 32) * 5) / 9;
+  celsius.innerHTML = Math.round(`${celsiusElement}`);
 }
 
 let cLink = document.querySelector("#celsius");
 cLink.addEventListener("click", getCelsius);
 
+let fahrenheitTemp = null;
+
+// convert back to fahrenheit
+
 function getFahrenheit(event) {
   event.preventDefault();
-
   let fahrenheit = document.querySelector("h2");
-  let fahrenheitElement = "h2";
-  fahrenheit.innerHTML = `${fahrenheitElement}`;
+  let fahrenheitDegrees = fahrenheitTemp;
+  fahrenheit.innerHTML = Math.round(`${fahrenheitDegrees}`);
 }
 
 let fLink = document.querySelector("#fahrenheit");
