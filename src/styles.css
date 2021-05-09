@@ -20,18 +20,21 @@ p,
 #currentWeather {
   color: #0d335d;
   text-align: center;
-  font-family: "Raleway", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  padding: 3px;
 }
 
 .condition,
 .windspeed,
-.humid {
+.humidity,
+.windy {
   color: #0d335d;
   text-align: center;
   text-transform: capitalize;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 h2 {
