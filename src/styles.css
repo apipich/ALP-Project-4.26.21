@@ -24,7 +24,9 @@ p,
   font-size: 20px;
 }
 
-.condition {
+.condition,
+.windspeed,
+.humid {
   color: #0d335d;
   text-align: center;
   text-transform: capitalize;
@@ -36,7 +38,7 @@ h2 {
   color: #1a508b;
   text-align: right;
   font-family: "Raleway", sans-serif;
-  font-size: 45px;
+  font-size: 55px;
   line-height: 25px;
 }
 
@@ -100,11 +102,10 @@ button:hover {
   margin: 0 auto;
 }
 
-.col-sm-4 {
-  width: 10%;
-  padding: 0 8px;
+.col-4 {
   text-align: center;
   align-self: center;
+  padding: 3px;
 }
 
 input {
@@ -128,4 +129,10 @@ input {
   font-size: 40px;
   color: white;
   padding: 7px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
 }

@@ -37,7 +37,13 @@ function showWeather(response) {
   let weatherConditionElement = document.querySelector("#weatherCondition");
   let weatherCondition = response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
+  let windElement = document.querySelector("#wind");
+  let wind = Math.round(response.data.wind.speed);
+  let humidityElement = document.querySelector("#humidity");
+  let humidity = response.data.main.humidity;
 
+  humidityElement.innerHTML = humidity;
+  windElement.innerHTML = wind;
   fahrenheitTemp = response.data.main.temp;
   cityElement.innerHTML = city;
   temperatureElement.innerHTML = temperature;
