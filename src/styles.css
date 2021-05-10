@@ -83,21 +83,29 @@ button:hover {
   line-height: 25px;
 }
 
-.fDegrees,
-.cDegrees {
+.fDegrees {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   letter-spacing: -2px;
-}
-
-.units {
   position: relative;
   top: -5px;
   right: -48px;
 }
 
+.cDegrees {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: -2px;
+  position: relative;
+  top: -5px;
+  right: -52px;
+}
+
 .divider {
   font-size: 20px;
+  position: relative;
+  top: -6px;
+  right: -51px;
 }
 
 .mainIcon {
