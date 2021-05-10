@@ -47,7 +47,7 @@ h2 {
   line-height: 25px;
   position: relative;
   top: 1px;
-  right: -25px;
+  right: -45px;
 }
 
 a {
@@ -93,11 +93,17 @@ button:hover {
 .units {
   position: relative;
   top: -5px;
-  right: -25px;
+  right: -48px;
 }
 
 .divider {
   font-size: 20px;
+}
+
+.mainIcon {
+  position: relative;
+  top: 2px;
+  right: -85px;
 }
 
 .col {
