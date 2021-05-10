@@ -119,3 +119,23 @@ function getFahrenheit(event) {
 
 let fLink = document.querySelector("#fahrenheit");
 fLink.addEventListener("click", getFahrenheit);
+
+// forecast
+
+function showForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = `
+<div class="row">
+  <div class="col">
+    <div class="weather-forecast-day">THURS</div>
+    <img src="images/cloud.png" width="25px" />
+    <div class="weather-forecast-temperature">
+      <span class="weather-forecast-temp">62&deg;</span>
+    </div>
+  </div>
+</div>
+`;
+}
+
+showForecast();
