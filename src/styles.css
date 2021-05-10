@@ -46,7 +46,7 @@ h2 {
   font-size: 55px;
   line-height: 25px;
   position: relative;
-  top: 1px;
+  top: 10px;
   right: -45px;
 }
 
@@ -88,8 +88,8 @@ button:hover {
   font-size: 20px;
   letter-spacing: -2px;
   position: relative;
-  top: -5px;
-  right: -48px;
+  top: -30px;
+  right: -95px;
 }
 
 .cDegrees {
@@ -97,15 +97,15 @@ button:hover {
   font-size: 20px;
   letter-spacing: -2px;
   position: relative;
-  top: -5px;
-  right: -52px;
+  top: -30px;
+  right: -92px;
 }
 
 .divider {
   font-size: 20px;
   position: relative;
-  top: -6px;
-  right: -51px;
+  top: -30px;
+  right: -95px;
 }
 
 .mainIcon {
