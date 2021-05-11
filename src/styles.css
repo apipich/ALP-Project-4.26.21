@@ -16,8 +16,7 @@ h1 {
   letter-spacing: -2px;
 }
 
-p,
-#currentWeather {
+p {
   color: #0d335d;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -25,18 +24,20 @@ p,
   padding: 3px;
 }
 
-.weatherNow,
-.humidity,
-.windy {
-  color: #0d335d;
+.row {
+  margin: 0 auto;
+}
+
+.col {
   text-align: center;
-  text-transform: capitalize;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 16px;
+  font-family: "Raleway", sans-serif;
+  padding: 3px;
+}
+
+.mainIcon {
   position: relative;
-  top: 6px;
-  right: 80px;
+  top: -10px;
+  right: -140px;
 }
 
 h2 {
@@ -52,35 +53,6 @@ h2 {
 
 a {
   text-decoration: none;
-}
-
-button {
-  background-color: #b4cee9;
-  border: 1px solid #93a5cf;
-  color: #1a508b;
-  border-radius: 30px;
-  font-family: "Paytone One", sans-serif;
-  font-size: 13px;
-  padding: 5px 10px;
-  display: block;
-  margin: 0 auto;
-  white-space: nowrap;
-}
-
-button:hover {
-  background-color: #a5bcd5;
-  color: #ffffff;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-}
-
-.main {
-  color: #1a508b;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-size: 45px;
-  line-height: 25px;
 }
 
 .fDegrees {
@@ -108,40 +80,49 @@ button:hover {
   right: -99px;
 }
 
-.mainIcon {
-  position: relative;
-  top: -5px;
-  right: -85px;
-}
-
-.col {
+.weatherNow,
+.humidity,
+.windy {
+  color: #0d335d;
   text-align: center;
-  font-family: "Raleway", sans-serif;
-  padding: 3px;
-}
-
-.row {
-  margin: 0 auto;
-}
-
-.col-4 {
-  text-align: center;
-  align-self: center;
-  padding: 3px;
-}
-
-input {
-  border: 1px solid #0d335d;
-}
-
-.repository {
+  text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  margin: -30px, 0px, 1px;
+  font-size: 13px;
+  line-height: 16px;
   position: relative;
-  width: 100%;
-  top: 540px;
-  text-align: center;
+  top: 6px;
+  right: 80px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+button {
+  background-color: #b4cee9;
+  border: 1px solid #93a5cf;
+  color: #1a508b;
+  border-radius: 30px;
+  font-family: "Paytone One", sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  display: block;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: #a5bcd5;
+  color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.input {
+  border: 1px solid #0d335d;
 }
 
 .col-md {
@@ -151,12 +132,6 @@ input {
   font-size: 40px;
   color: white;
   padding: 7px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 15px;
 }
 
 div.weather-forecast-day {
@@ -170,4 +145,14 @@ div.weather-forecast-day {
   font-size: 30px;
   color: white;
   line-height: 18px;
+}
+
+.repository {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: -30px, 0px, 1px;
+  position: relative;
+  width: 100%;
+  top: 540px;
+  text-align: center;
 }
