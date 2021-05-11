@@ -155,7 +155,7 @@ function showForecast(response) {
     <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div>
     <img src="https://openweathermap.org/img/wn/${
       forecastDay.weather[0].icon
-    }@2x.png" width="25px" />
+    }@2x.png" width="40px" />
     <div class="weather-forecast-temperature">
       <span class="weather-forecast-temp">${Math.round(
         forecastDay.temp.day
