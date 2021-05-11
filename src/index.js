@@ -27,6 +27,15 @@ function formatDate(date) {
 formatDate();
 
 //
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["SUN", "MON", "TUES", "WED", "THURS", "FRI", "SAT"];
+
+  return days[day];
+}
+
+//
 
 function getForecast(coordinates) {
   console.log(coordinates);
@@ -133,23 +142,28 @@ fLink.addEventListener("click", getFahrenheit);
 // forecast
 
 function showForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["TUES", "WED", "THURS", "FRI", "SAT"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `
   <div class="col">
-    <div class="weather-forecast-day">${day}</div>
-    <img src="images/cloud.png" width="25px" />
+    <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div>
+    <img src="https://openweathermap.org/img/wn/${
+      forecastDay.weather[0].icon
+    }@2x.png" width="25px" />
     <div class="weather-forecast-temperature">
-      <span class="weather-forecast-temp">62&deg;</span>
+      <span class="weather-forecast-temp">${Math.round(
+        forecastDay.temp.day
+      )}</span>
     </div>
   </div>
 `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
