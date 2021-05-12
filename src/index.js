@@ -153,6 +153,9 @@ function showForecast(response) {
         `
   <div class="col">
     <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div>
+    <div class="weather-forecast-condition" id="forecastNumber">${
+      forecastDay.weather[0].description
+    }</div>
     <img src="https://openweathermap.org/img/wn/${
       forecastDay.weather[0].icon
     }@2x.png" width="40px" />
