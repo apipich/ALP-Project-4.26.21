@@ -1,5 +1,5 @@
 .container {
-  padding: 30px;
+  padding: 17px;
   margin: 0 auto;
   margin-top: 40px;
   border: 1px solid #93a5cf;
@@ -92,6 +92,14 @@ a {
   position: relative;
   top: 6px;
   right: 80px;
+}
+
+#forecastNumber {
+  color: #0d335d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 ul {
