@@ -118,9 +118,11 @@ button {
   font-family: "Paytone One", sans-serif;
   font-size: 13px;
   padding: 5px 10px;
-  display: block;
   margin: 0 auto;
   white-space: nowrap;
+  position: relative;
+  top: -1px;
+  right: 100px;
 }
 
 button:hover {
@@ -133,6 +135,19 @@ button:hover {
 
 .input {
   border: 1px solid #0d335d;
+}
+
+#locate {
+  position: relative;
+  top: 0px;
+  right: 18px;
+}
+
+#weather-form {
+  width: 800px;
+  position: relative;
+  top: -5px;
+  right: -80px;
 }
 
 .col-md {
