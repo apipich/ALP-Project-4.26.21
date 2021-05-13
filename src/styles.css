@@ -39,7 +39,7 @@ p {
 .mainIcon {
   position: relative;
   top: -10px;
-  right: -140px;
+  right: -120px;
 }
 
 h2 {
@@ -50,7 +50,7 @@ h2 {
   line-height: 25px;
   position: relative;
   top: 10px;
-  right: -45px;
+  right: -35px;
 }
 
 a {
@@ -63,7 +63,7 @@ a {
   letter-spacing: -2px;
   position: relative;
   top: -30px;
-  right: -116px;
+  right: -105px;
 }
 
 .cDegrees {
@@ -72,14 +72,14 @@ a {
   letter-spacing: -2px;
   position: relative;
   top: -30px;
-  right: -115px;
+  right: -101px;
 }
 
 .divider {
   font-size: 20px;
   position: relative;
   top: -30px;
-  right: -117px;
+  right: -105px;
 }
 
 .weatherNow,
@@ -93,7 +93,7 @@ a {
   line-height: 16px;
   position: relative;
   top: 6px;
-  right: 80px;
+  right: 70px;
 }
 
 #forecastNumber {
