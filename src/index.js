@@ -117,6 +117,8 @@ findCity("Hoboken");
 
 function getFahrenheit(event) {
   event.preventDefault();
+  cLink.classList.remove("active");
+  fLink.classList.add("active");
   let fahrenheit = document.querySelector("h2");
   let fahrenheitDegrees = fahrenheitTemp;
   fahrenheit.innerHTML = Math.round(`${fahrenheitDegrees}`);
@@ -130,6 +132,8 @@ fLink.addEventListener("click", getFahrenheit);
 function getCelsius(event) {
   event.preventDefault();
   let celsius = document.querySelector("h2");
+  fLink.classList.remove("active");
+  cLink.classList.add("active");
   let celsiusElement = ((fahrenheitTemp - 32) * 5) / 9;
   celsius.innerHTML = Math.round(`${celsiusElement}`);
 }
