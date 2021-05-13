@@ -140,14 +140,14 @@ button:hover {
 #locate {
   position: relative;
   top: 0px;
-  right: 18px;
+  right: 16px;
 }
 
 #weather-form {
   width: 800px;
   position: relative;
   top: -5px;
-  right: -88px;
+  right: -90px;
 }
 
 .col-md {
