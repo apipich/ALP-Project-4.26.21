@@ -113,7 +113,7 @@ weatherForm.addEventListener("submit", handleSubmit);
 
 findCity("Hoboken");
 
-// part 3 - convert to celsius
+// part 3 - convert to celsius, fahrenheit
 
 function getCelsius(event) {
   event.preventDefault();
@@ -125,10 +125,6 @@ function getCelsius(event) {
 let cLink = document.querySelector("#celsius");
 cLink.addEventListener("click", getCelsius);
 
-let fahrenheitTemp = null;
-
-// convert back to fahrenheit
-
 function getFahrenheit(event) {
   event.preventDefault();
   let fahrenheit = document.querySelector("h2");
@@ -138,6 +134,8 @@ function getFahrenheit(event) {
 
 let fLink = document.querySelector("#fahrenheit");
 fLink.addEventListener("click", getFahrenheit);
+
+let fahrenheitTemp = null;
 
 // forecast
 
