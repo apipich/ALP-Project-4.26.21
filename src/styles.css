@@ -60,6 +60,7 @@ a {
 a.active {
   color: black;
   cursor: default;
+  font-weight: bold;
 }
 
 .fDegrees {
